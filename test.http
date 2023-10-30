@@ -1,0 +1,37 @@
+### [POST] Create a new Order
+POST http://localhost:8085/start
+Content-Type: application/json
+
+{
+  "items":  [{"name":  "Pizza", "quantity": 2, "unitPrice":  20.00}],
+  "email": "sbod@gmail.com",
+  "platForm": "ebay"
+}
+
+### [GET] Accept the Order
+GET http://localhost:8085/accept
+Accept: application/json
+
+### [GET] Pick the Order
+GET http://localhost:8085/pick
+Accept: application/json
+
+### [GET] Delivery the Order
+GET http://localhost:8085/delivery
+Accept: application/json
+
+### [GET] Say Hello
+GET http://localhost:8085/hello
+Accept: application/json
+
+### [GET] Say GoodBye
+GET http://localhost:8085/bye
+Accept: application/json
+
+### [GET] Say France
+GET http://localhost:8085/france
+Accept: application/json
+
+### [GET] Get Current Message
+GET http://localhost:8085/message
+Accept: application/json
