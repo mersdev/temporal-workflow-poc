@@ -42,13 +42,13 @@ public class OrderActivityImpl implements OrderActivity {
                             item.getUnitPrice() * item.getQuantity()
                     ));
         }
-        response = new OrderResponse(orderResponse.getId());
-//        response = new OrderResponse( orderResponse.getId(),
-//                itemListResponse,
-//                orderResponse.getEmail(),
-//                orderResponse.getPlatForm(),
-//                orderResponse.getCreatedAt(),
-//                orderResponse.getStatus());
+        //response = new OrderResponse(orderResponse.getId());
+        response = new OrderResponse( orderResponse.getId(),
+                itemListResponse,
+                orderResponse.getEmail(),
+                orderResponse.getPlatForm(),
+                orderResponse.getCreatedAt(),
+                orderResponse.getStatus());
         return response;
     }
 
